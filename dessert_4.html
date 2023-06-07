@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(245, 241, 220, 0.451);
+            width: 100%;
+            height: auto;
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        header {
+            width: 100%;
+            height: 300px;
+            display: inline;
+        }
+
+        .line {
+            margin-top: 40px;
+            margin-bottom: -75px;
+            border-top: solid 1px rgba(0, 0, 0, 0.33);
+        }
+
+        .line1 {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: -90px;
+            margin-left: 490px;
+
+            width: 35%;
+            border-top: solid 3px rgb(121, 113, 97);
+        }
+
+        #logo {
+            padding-top: 0px;
+            padding-bottom: -40px;
+            margin: 20px 30px -36px 40px;
+        }
+
+        #daily {
+            text-align: right;
+            padding-left: 470px;
+            margin-bottom: -4px;
+        }
+
+        #mic {
+            float: right;
+            margin-right: 85px;
+            margin-top: px;
+        }
+
+        header nav ul {
+            padding-left: 80px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: left;
+            padding-top: -40px;
+        }
+
+        header nav a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        header nav a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        header nav a:active {
+            text-decoration: brown;
+            color: black;
+        }
+
+        header nav a:visited {
+            text-decoration: brown;
+            color: black;
+        }
+
+        header nav li {
+            display: inline;
+            margin-left: 30px;
+        }
+
+        .has-menu {
+            position: relative;
+        }
+
+        .sub-menu {
+            text-align: center;
+            padding-left: 170px;
+            position: absolute;
+            width: 80px;
+        }
+
+        .has-menu>a::after {
+            font-weight: 900;
+        }
+
+        .has-menu .sub-menu {
+            display: none;
+        }
+
+        .has-menu:hover .sub-menu {
+            display: block;
+        }
+
+        main {
+
+            display: inline-block;
+            margin-top: 130px;
+            margin-left: 150px;
+        }
+
+        #warp {
+            display: flex;
+            flex-flow: column;
+            width: 80;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+
+        div {
+            padding-left: 5px;
+            padding-bottom: 100px;
+        }
+
+
+
+        select {
+            background-color: rgba(245, 241, 220, 0.451);
+            float: right;
+            margin-right: 90px;
+        }
+
+        #chooes {
+            /* color: rgba(245, 241, 220, 0.451); */
+            border: solid 0.2px;
+            border-radius: 0.3rem;
+            width: 350px;
+        }
+
+        
+        /*--------------------------------------------------------------------------------------------------------*/
+        #review {
+            display: flex;
+            flex-wrap: wrap;
+            float: none;
+            width: 37%;
+            margin: 000px 0 0 360px;
+            margin-bottom: 30px;
+        }
+
+        #review ul {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+
+        }
+
+        #review li {
+            flex-flow: column;
+            display: flex;
+            list-style-type: none;
+            padding-bottom: 10px;
+            font-size: 20px;
+        }
+
+        #review p {
+            font-weight: bolder;
+            font-size: 30px;
+            padding-left: 220px;
+            padding-top: -30px;
+            padding-bottom: 30px;
+        }
+
+
+        /*-----------------------------------------------------------------------------------*/
+        footer {
+            padding-top: -200px;
+            height: 260px;
+            padding-left: 100px;
+            font-size: 18px;
+        }
+
+        footer #address {
+            margin-left: 30px;
+            margin-right: 50px;
+            list-style-type: none;
+            float: left;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        footer #footer_menu li {
+            list-style-type: none;
+            margin-top: 5px;
+        }
+
+        footer #company_info {
+            margin-top: 20px;
+
+        }
+
+        footer #company_info li {
+            list-style-type: none;
+            margin-top: 5px;
+        }
+
+        footer #copyright {
+            list-style-type: none;
+            margin-top: 10px;
+            font-size: 11px;
+        }
+
+        footer #icon {
+            padding-top: 100px;
+            margin-top: 5px;
+            margin-right: 140px;
+            text-align: right;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="img/logo.png" alt="" width="78"></a>
+            <ul>
+                <li></li>
+                <li><a href="walk.html">산책</a></li>
+                <li><a href="play.html">플레이리스트</a></li>
+                <li class="has-menu"><a href="dessert.html">디저트</a>
+                    <ul class="sub-menu">
+                        <li><a href="dessert_1.html">휘낭시에</a> </li>
+                        <li><a href="dessert_2.html">소금빵</a></li>
+                        <li><a href="dessert_3.html">케익</a></li>
+                        <li><a href="dessert_4.html">그 외</a></li>
+                    </ul>
+                </li>
+                <li><a href="sandwich.html">샌드위치</a></li>
+                <li><a href="trainning.html">홈트레이닝</a></li>
+                <!-- <li><select name="" id="chooes">
+                    <option value="">daily</option>
+                    <option value="">산책</option>
+                    <option value="">플레이리스트</option>
+                    <option value="">디저트</option>
+                    <option value="">홈트레이닝</option>
+                </select></li> -->
+                <li><img id="daily" src="img/header_daily.png" alt="" width="400"></li>
+                <li><img id="mic" src="img/mic.png" alt="" width="13"></li>
+            </ul>
+            <div class="line">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="review">
+            <p> 그 외 베이커리</p>
+            <ul>
+                <li><img src="img/dessert1.jpg" alt="" width="500"></li>
+                <li>킴스델리마켓</li>
+                <li>- 서울 송파구 백제고분로45길 13 1층</li>
+                <li>- (지정 휴무 없음) 09 : 00 - 20 : 00</li>
+                <li>- 한창 베이글에 빠져있을때 인스타에 자꾸 뜨던 베이글 맛집이다 <br>
+                    인테리어가 해외 길거리 마켓을 연상케한다.<br>
+                    특이한 베이글 모양에 시그니처인 토마토바질 베이글을 먹어봤는데 쫀득하고 시중에서 파는 베이글보다 훨씬 맛있어서 더 먹고 싶던 베이글이다<br>
+                    색감이 쨍해서 색소 걱정을 할 수있지만 모든 메뉴는 색소 0%, NO밀가루, 100% 쌀가루를 사용한다고 한다</li>
+            </ul>
+        </section>
+
+        <section id="review">
+            <ul>
+                <li><img src="img/dessert17.jpg" alt="" width="500"></li>
+                <li>포터블</li>
+                <li>- 경기 안산시 단원구 광덕서로66 101호</li>
+                <li>- (지정 휴무 없음) 12 : 00 - 21 : 30</li>
+                <li>- 근처 카페 알아보다 우연히 들어간 곳 다른 곳엔 잘 안보이는 푸딩이 있길래 먹어봤는데 대!성!공!<br>
+                푸딩종류는 하나에 아인슈페너도 맛있다 구석에 있어 나만아는 줄 알았더니 동네에서 꽤나 유명한 집이였다.<br>
+            </li>
+            </ul>
+
+        </section>
+
+        <section id="review">
+            <ul>
+                <li><img src="img/dessert10.jpg" alt="" width="500"></li>
+                <li>알페도</li>
+                <li>- 서울 용산구 이태원로 174 1층 4-5호</li>
+                <li>- (지정 휴무 없음) 08 : 00 - 23 : 00</li>
+                <li>- 조금 색다른 곳이다 현지인들이 터키의 여러 베이커리를 판매하고 있고 유퀴즈에도 나온 카이막 맛집이라고 해서 찾아간 곳이다.<br>
+                카이막 외의 디저트도 먹어봤는데 우리나라와 다르게 조금 푸석한 수분기라곤 하나도 없는 맛이라 실망했지만 카이막은 먹을 만했다.<br>
+            그래도 이 곳 카이막보다 다른 매장이 내 입맛엔 더 잘맞았다.(매우 주관적) </li>
+            </ul>
+        </section>
+<section id="review">
+    <ul>
+        <li><img src="img/dessert18.jpg" alt="" width="500" ></li>
+        <li>타르틴 베이커리</li>
+        <li>- 서울 강남구 언주로 168길 24</li>
+        <li>- 월요일 휴무 매일 10 : 00 - 21 : 00</li>
+        <li>- 유명하다길래 가 본 브런치집 사진 속 메뉴는 바나나 크림 타르트, 레몬 머랭 쿠키이다.<br>
+        유명한 만큼 맛있고 그릴치즈 쪽파 샌드위치 추천!</li>
+    </ul>
+     
+</section>
+    </main>
+
+
+    <main>
+
+
+    </main>
+
+    <div class="line">
+    </div>
+    <footer>
+        <article id="address">
+            <img src="img/logo.png" alt="" width="100">
+            <ul id="footer_menu">
+                <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                <li>일상 공유 서비스 | 무단 도용 신고 | 추천 접수 | 길 안내 | 사이버 신고센터</li>
+            </ul>
+            <ul id="commpany_info">
+                <li>Company : (주)It's me </li>
+                <li>Tel : 010-2216-1053</li>
+                <li>Email : seoso0211@naver.com</li>
+                <li>Address : 경기도 의왕시 내손동 계원예술대학교</li>
+                <li>Copyright © GOWOONSESANG COSMETICS Co.,Ltd. All Rights Reserved.</li>
+            </ul>
+        </article>
+        <article>
+            <div id="icon">
+                <img src="img/b.png" alt="" width="50">
+                <img src="img/y.png" alt="" width="50">
+                <img src="img/i.png" alt="" width="50">
+            </div>
+        </article>
+    </footer>
+</body>
+
+</html>

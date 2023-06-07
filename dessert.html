@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgba(245, 241, 220, 0.451);
+            width: 100%;
+            height: auto;
+            font-family: 'Nanum Pen Script', cursive;        }
+
+        header {
+            width: 100%;
+            height: 300px;
+            display: inline;
+        }
+
+        .line {
+            margin-top: 40px;
+            margin-bottom: -75px;
+            border-top: solid 1px rgba(0, 0, 0, 0.33);
+        }
+
+        .line1 {
+            display: flex;
+            flex-flow: column;
+            margin-bottom: -90px;
+            margin-left: 490px;
+
+            width: 35%;
+            border-top: solid 3px rgb(121, 113, 97);
+        }
+
+        #logo {
+            padding-top: 0px;
+            padding-bottom: -40px;
+            margin: 20px 30px -36px 40px;
+        }
+
+        #daily {
+            text-align: right;
+            padding-left: 390px;
+            margin-bottom: -4px;
+        }
+
+        #daily1 {
+            text-align: center;
+            padding-left: 550px;
+            padding-top: 90px;
+        }
+
+        #mic {
+            float: right;
+            margin-right: -390px;
+            margin-bottom: -4px;
+        }
+
+        header nav ul {
+            padding-left: 80px;
+            font-size: 18px;
+            text-decoration: none;
+            text-align: left;
+            padding-top: -40px;
+        }
+
+        header nav a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        header nav a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        header nav a:active {
+            text-decoration: brown;
+            color: black;
+        }
+
+        header nav a:visited {
+            text-decoration: brown;
+            color: black;
+        }
+
+        header nav li {
+            display: inline;
+            margin-left: 30px;
+        }
+        .has-menu { 
+            position: relative;
+        }
+        .sub-menu {
+            text-align: center;
+            padding-left: 170px;
+            position: absolute;
+            width: 80px;
+        }
+        .has-menu > a::after {
+            font-weight: 900;
+        }
+        .has-menu .sub-menu {
+            display: none;
+        }
+        .has-menu:hover .sub-menu {
+            display: block;
+        }
+
+        #abc {
+            margin-top: -110px;
+            height: 200px;
+            width: 100%;
+            /* background-image: url(img/img4.jpg); */
+            background-color: rgba(91, 69, 60, 0.874);
+            
+        }
+
+        #photo {
+            margin-top: 95px;
+            margin-left: 320px;
+            width: 550px;
+            border: solid 6px rgb(255, 255, 255);
+        }
+
+        #photo1 {
+            margin-left: -100px;
+            margin-bottom: -60px;
+            width: 460px;
+            /* border: solid 15px rgb(143, 129, 92); */
+        }
+
+        #photo2 {
+            margin-left: 500px;
+            width: 400px;
+        }
+
+        #color1 {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+
+            width: auto;
+            margin-top: px;
+            height: 20px;
+            /* background-color: rgb(162, 157, 144); */
+        }
+
+        main {
+
+            display: inline-block;
+            margin-top: 130px;
+            margin-left: 150px;
+        }
+
+        #warp {
+            display: flex;
+            flex-flow: column;
+            width: 80;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        div {
+            padding-left: 5px;
+            padding-bottom: 100px;
+        }
+
+        div img {
+            border-radius: 0.7rem;
+        }
+
+        #sitemap {
+            padding: 20px 0 0 15px;
+        }
+
+        h1 {
+            font-weight: 100;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 30px;
+            margin-bottom: -30px;
+            font-size: 50px;
+            text-align: center;
+        }
+        select {
+            background-color: rgba(245, 241, 220, 0.451);
+            float: right;
+            margin-right: 90px;
+        }
+        #chooes {
+            /* color: rgba(245, 241, 220, 0.451); */
+            border: solid 0.2px;
+            border-radius: 0.3rem;
+            width: 350px;
+        }
+        #lemon {
+            
+            flex-wrap: wrap;
+            margin-left: 200px;
+            width: 600px;
+        }
+        #pud {
+            
+            float: right;
+            opacity: 80%;
+            margin-top: -30px;
+            width: 1100px;
+            margin-right: 200px;
+            
+            
+        }
+        #mine {
+            opacity: 90%;
+            margin-left: 500px;
+            margin-top: -30px;
+            width: 600px;
+        }
+
+        /*-----------------------------------------------------------------------------------*/
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img id="logo" src="img/logo.png" alt="" width="78"></a>
+            <ul>
+                <li></li>
+                <li><a href="walk.html">산책</a></li>
+                <li><a href="play.html">플레이리스트</a></li>
+                <li class="has-menu"><a href="dessert.html">디저트</a>
+                    <ul class="sub-menu">
+                        <li><a href="dessert_1.html">휘낭시에</a> </li>
+                        <li><a href="dessert_2.html">소금빵</a></li>
+                        <li><a href="dessert_3.html">케익</a></li>
+                        <li><a href="dessert_4.html">그 외</a></li>
+                    </ul></li>
+                <li><a href="sandwich.html">샌드위치</a></li>
+                <li><a href="trainning.html">홈트레이닝</a></li>
+                <li><select name="" id="chooes">
+                    <option value="">Dessert</option>
+                    <option value="">휘낭시에</option>
+                    <option value="">소금빵</option>
+                    <option value="">케익</option>
+                    <option value="">그 외 베이커리</option>
+                </select></li>
+                <!-- <li><img id="daily" src="img/header_daily.png" alt="" width="400"></li> -->
+                <li><img id="mic" src="img/mic.png" alt="" width="13"></li>
+            </ul>
+            <div class="line">
+            </div>
+        </nav>
+    </header>
+    <!-- <h1>" D e s s e r t "</h1>
+    <section id="abc">
+        <a href="">.</a>
+    </section> -->
+    <img id="" src="img/" alt="">
+    <!-- <section>
+        <img id="photo" src="img/img1.jpg" alt="">
+        <img id="photo1" src="img/img2.jpg" alt="">
+    </section>
+    <section>
+        <img id="photo2" src="img/img3.jpg" alt="">
+    </section>
+     -->
+    <section id="color1">
+        <div class="line1"></div>
+        <a>I n d u l g e&nbsp;&nbsp;&nbsp;  i n &nbsp;&nbsp;&nbsp;s w e e t n e s s </a>
+        <div class="line1"></div>
+    </section>
+    <main>
+        <img id="lemon" src="img/dessert18.jpg" alt="">
+        <img id="pud" src="img/dessert17_1.jpg" alt="">
+        <img id="mine" src="img/img2.jpg" alt="">
+    </main>
+
+    <div class="line">
+    </div>
+    <footer>
+        <article id="address">
+            <img src="img/logo.png" alt="" width="100">
+            <ul id="footer_menu">
+                <li>개인정보 취급방침 | 이용안내 | 이메일 무단수집 거부</li>
+                <li>일상 공유 서비스 | 무단 도용 신고 | 추천 접수 | 길 안내 | 사이버 신고센터</li>
+            </ul>
+            <ul id="commpany_info">
+                <li>Company : (주)It's me </li>
+                <li>Tel : 010-2216-1053</li>
+                <li>Email : seoso0211@naver.com</li>
+                <li>Address : 경기도 의왕시 내손동 계원예술대학교</li>
+                <li>Copyright © GOWOONSESANG COSMETICS Co.,Ltd. All Rights Reserved.</li>
+            </ul>
+        </article>
+        <article>
+            <div id="icon">
+                <img src="img/b.png" alt="" width="50">
+                <img src="img/y.png" alt="" width="50">
+                <img src="img/i.png" alt="" width="50">
+            </div>
+        </article>
+    </footer>
+</body>
+
+</html>
